@@ -1,0 +1,78 @@
+@charset "UTF-8";
+:root{
+    --main-color : #000000;
+    --sub-color: #D9D9D9;
+    --manager-color : #07690B;
+    --teacher-color : #8600B6;
+    --student-color : #0057FF;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: var(--main-color);
+}
+ul{
+    list-style: none;
+}
+.d-none{
+    display: none;
+}
+.container{
+    max-width: 1190px;
+    margin: 0 auto;
+}
+/*=========================================
+ header : logo, promotion
+===========================================*/
+header{
+    background-color: var(--main-color);
+}
+.Hlogo{
+    display: inline-block;
+    width: 250px;
+    height: 110px;
+    margin-top: 5px;
+}
+.Hpromotion{
+    display: inline-block;
+    width: 840px;
+    height: 110px;
+}
+/*=========================================
+ nav : main-nav
+===========================================*/
+.main-nav{
+    float: left;
+    min-width: 240px;
+    height: 100%;
+	left: 0px;
+	top: 115px;
+    margin: 1rem .3rem;
+}
+.main-nav li{
+    margin-bottom: 1rem;
+}
+.main-nav li img{
+    vertical-align: middle;
+}
+/*=========================================
+ section : indexBG1, indexBG2
+===========================================*/
+.indexBG1{
+    float: left;
+}
+.indexBGfont{
+    float: left; 
+    margin-top: 250px;
+}
+.indexBG2{
+    float: left;
+}

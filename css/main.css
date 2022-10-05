@@ -50,7 +50,7 @@ header{
 }
 .Hpromotion{
     display: inline-block;
-    width: 840px;
+    width: 930px;
     height: 110px;
 }
 /*=========================================
@@ -59,10 +59,10 @@ header{
 .main-nav{
     float: left;
     min-width: 240px;
-    height: 100%;
 	left: 0px;
 	top: 115px;
     margin: 1rem .3rem;
+    height: 549px;;
 }
 .main-nav li{
     margin-bottom: 1rem;
@@ -71,17 +71,38 @@ header{
     vertical-align: middle;
 }
 /*=========================================
- section : indexBG1, indexBG2
+ section : indexBG1, indexBG2, loginBG
 ===========================================*/
 .indexBG1{
     float: left;
 }
 .indexBGfont{
     float: left; 
+    margin: .5rem;
     margin-top: 250px;
 }
 .indexBG2{
     float: left;
+}
+.loginBG{
+    float: left;
+    position: relative;
+    background-image: url("../images/loginBG.png");
+    background-repeat: no-repeat;
+    width: 938px; 
+    height: 590px;
+}
+.login-input{
+    position: absolute;
+    top: 7rem;
+    left: 21.5rem;
+}
+.login-input h3{
+    color: var(--white-color);
+    font-size:2rem;
+}
+.login-input input{
+    display: block;
 }
 /*=========================================
 footer
@@ -91,6 +112,7 @@ footer{
     position: relative;
     color: var(--white-color);
     padding: .3rem 0;
+    height: 115px;
 } 
 .guide-links li{
     display: inline-block;
@@ -101,15 +123,11 @@ footer{
 .guide-links li:nth-child(2){
 	margin: 0 .5rem;
 }
-footer .container{
-    padding-top: 2rem;
-}
 .guide-links{
     float: left;
-    margin: .1rem 0;
+    padding: 2rem 0;
 }
 footer p{
     float: right;
-    margin: .1rem 0;
-    margin-right: 6rem;
+    padding: 2rem 0;
 }

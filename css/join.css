@@ -1,0 +1,112 @@
+@charset "UTF-8";
+:root{
+    --main-color : #000;
+    --sub-color: #D9D9D9;
+    --manager-color : #07690B;
+    --teacher-color : #9747FF;
+    --student-color : #4584FF;
+    --white-color : #FFF;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: var(--main-color);
+}
+ul{
+    list-style: none;
+}
+.d-none{
+    display: none;
+}
+.container{
+    max-width: 1190px;
+    height: 115px;
+    margin: 0 auto;
+}
+.wrap{
+    max-width: 1190px;
+    height: 969px;
+    margin: 0 auto;
+    background-color: var(--sub-color); 
+}
+/*=========================================
+ header : Hlogo, Htitle
+===========================================*/
+header{
+    background-color: var(--student-color);
+}
+.Hlogo{
+    display: inline-block;
+    width: 250px;
+    height: 110px;
+    margin-top: 2px;
+}
+.Hlogo img{
+    margin: 1rem 4.5rem;
+    float: left;
+}
+.Htitle{
+    width: 930px;
+    height: 40px;
+    float: right;
+    padding: 1.9rem 0;
+    text-align: center;
+    color:var(--white-color);
+}
+/*=========================================
+ nav : main-nav
+===========================================*/
+.main-nav{
+    float: left;
+    min-width: 240px;
+	left: 0px;
+	top: 115px;
+    margin: 1rem .3rem;
+    height: 549px;;
+    background-color: var(--student-color);
+}
+.main-nav li{
+    margin-bottom: 1rem;
+}
+.main-nav li img{
+    vertical-align: middle;
+}
+/*================================================
+ section :
+==================================================*/
+
+/*=========================================
+footer
+===========================================*/
+footer{
+    background-color: var(--student-color);
+    position: relative;
+    color: var(--white-color);
+    padding: .3rem 0;
+    height: 115px;
+} 
+.guide-links li{
+    display: inline-block;
+}
+.guide-links li a{
+    color: var(--white-color);
+}
+.guide-links li:nth-child(2){
+	margin: 0 .5rem;
+}
+.guide-links{
+    float: left;
+    padding: 2rem 0;
+}
+footer p{
+    float: right;
+    padding: 2rem 0;
+}

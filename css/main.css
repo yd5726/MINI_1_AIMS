@@ -70,9 +70,9 @@ header{
 .main-nav li img{
     vertical-align: middle;
 }
-/*=========================================
+/*================================================
  section : indexBG1, indexBG2, loginBG, login-bnt
-===========================================*/
+==================================================*/
 .indexBG1{
     float: left;
 }
@@ -116,6 +116,7 @@ header{
 }
 .login-input-sub{
     text-align: center; 
+    margin-top: 1rem;
 }
 .login-input-sub li{
     display: inline-block;

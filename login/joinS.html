@@ -12,7 +12,7 @@
     <h1 class="d-none">From One To Ten</h1>
     <header>
         <div class="container">
-            <h2 class="d-none">FOOT: logo, promotion</h2>
+            <h2 class="d-none">FOOT: joinS-logo, joinS-title</h2>
             <div class="Hlogo">
                 <img src="../images/joinS-logo.png" alt="joinS-logo-img">
             </div>
@@ -22,24 +22,115 @@
         </div>
     </header>
     <div class="wrap">
-        <nav class="main-nav">
-            <h2 class="d-none">FOOT: main-nav</h2>
-            <ul>
-                <li>
-                    <img src="../images/joinT-btn.png" alt="joinT-btn 선생님">
-                </li>
-                <li>
-                    <img src="../images/joinS-btn.png" alt="joinS-btn 학생">
-                </li>
-            </ul>
-        </nav>
-        <section class="wrap">
-            <h2 class="d-none">FOOT: section</h2>
-            <article class="loginForm">
-                <h3 class="d-none">FOOT: login</h3>
-                <p>로그인 폼</p>
-            </article>
-        </section>
+            <nav class="main-nav">
+                <h2 class="d-none">FOOT: main-nav</h2>
+                <ul>
+                    <li>
+                        <img src="../images/joinT-btn.png" alt="joinT-btn 선생님">
+                    </li>
+                    <li>
+                        <img src="../images/joinS-btn.png" alt="joinS-btn 학생">
+                    </li>
+                </ul>
+                <div class="ID-picture">
+                    <img src="../images/ID-picture_plus.png" alt="ID-picture_plus">
+                </div>
+            </nav>
+            <section class="contant">
+                <h2 class="d-none">FOOT: section-contant</h2>
+                <article class="loginForm">
+                    <div class="loginForm-box1">
+                        <h3 class="d-none">FOOT: loginForm-box1</h3>
+                        <h3>이용 약관 동의</h3>
+                        <hr>
+                        <div class="all-agreement">
+                            <h4>전체 동의</h4>
+                            <form action="" method="post" class="checkbox-style">
+                                <label>
+                                    <input type="checkbox">
+                                    {필수} <strong>서비스 이용약관</strong>에 동의합니다.
+                                    <button>자세히보기</button>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    {필수} <strong>개인정보처리방침</strong>에 동의합니다.
+                                    <button>자세히보기</button>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    {선택} <strong>광고성 정보의 수신</strong>에 동의합니다.
+                                </label>
+                                <div class="chekcbox-ad">
+                                    <label>
+                                        <input type="checkbox">
+                                        이메일
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        문자
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="loginForm-box2">
+                        <h3 class="d-none">FOOT: loginForm-box2</h3>
+                        <h3 class="pInfo-title">개인 정보 입력</h3>
+                        <p>* 필수입력</p>
+                        <hr>
+                        <div class="pInfo-agreement">
+                            <form action="" method="post" autocomplete="off">
+                                <div class="joinS-name">
+                                    <label for="joinS_Name">이름</label>
+                                    <input type="text" name="joinS-name" id="joinS_Name"
+                                    placeholder="이름을 정확하게 입력해주세요.">
+                                    <span>조건 : 이름을 정확하게 입력해주세요.</span>
+                                </div>
+                                <div class="joinS-id">
+                                    <label for="joinS_Id">아이디</label>
+                                    <input type="text" name="joinS-id" id="joinS_Id"
+                                    placeholder="{영문소문자, 숫자 4~16자}">
+                                    <span>조건 : {영문소문자, 숫자 4~16자}</span>
+                                </div>
+                                <div class="joinS-pw">
+                                    <label for="joinS_Pw">비밀번호</label>
+                                    <input type="password" name="joinS-pw" id="joinS_Pw"
+                                    placeholder="{영문대소문자/숫자/특수문자
+                                         중 2가지 이상 조합, 8~16자}">
+                                    <span>조건 : {영문대소문자/숫자/특수문자
+                                        중 2가지 이상 조합, 8~16자}</span>
+                                </div>
+                                <div class="joinS-email">
+                                    <label for="joinS_Email">이메일</label>
+                                    <input type="email" name="joinS-email" id="joinS_Email">
+                                </div>
+                                <div class="joinS-tel">
+                                    <label for="joinS_Tel">전화번호</label>
+                                    <input type="tel" name="joinS-tel" id="joinS_Tel">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="submit-click">
+                        <input type="submit" value="취소">
+                        <input type="submit" value="회원 가입">
+                    </div>
+                </article>
+            </section>
+            <div class="row_group">
+                <div class="join_row">
+                    <h3 class="join_title">
+                        <label for="id">아이디</label>
+                    </h3>
+                    <span class="ps_box int_id">
+                        <input type="text" id="id" name="id" class="int"
+                        title="ID" maxlength="20">
+                    </span>
+                    <span class="error_next_box" id="idMsg">
+                        에러발생 시 조건 넣어 조건에 맞는 문장 넣어줌
+                    </span>
+                </div>
+            </div>
     </div>
 </body>
 </html>

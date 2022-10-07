@@ -38,6 +38,12 @@ ul{
     margin: 0 auto;
     background-color: var(--sub-color); 
 }
+fieldset{
+    border: none;
+}
+hr{
+    margin: .5rem;
+}
 /*=========================================
  header : Hlogo, Htitle
 ===========================================*/
@@ -99,9 +105,11 @@ header{
     margin: 1rem .3rem;
     height: 46.5rem;  
     background-color: var(--sub2-color);
+    overflow: hidden;
 }
 .loginForm{
-    height: 684px;
+    height: 930px;
+    overflow: hidden;
 }
 .submit-click{
     margin-top: 8rem;
@@ -109,13 +117,16 @@ header{
 }
 /*=====================loginForm-box1=====================*/
 .loginForm-box1{
-    margin: 1rem .3rem 3rem;
+    margin: 1rem .3rem;
 }
 .loginForm-box1 h3{
     margin-left: 1rem;
 }
 .all-agreement{
     margin: 0 1rem;
+}
+.all-agreement h4{
+    margin-top: .5rem;
 }
 .all-agreement label{
     margin: 1rem 0;
@@ -152,7 +163,7 @@ header{
     display: block;
 }
 /*=====================취소/회원가입=====================*/
-.submit-click input:first-child{
+.submit-click button:first-child{
     float: left;
     margin-left: 15rem;
     padding: .3rem 1rem;

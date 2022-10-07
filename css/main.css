@@ -135,6 +135,7 @@ header{
     height: 50px;
     text-indent: 3rem;
     background-position: 1rem;
+    font-size: 1rem;
 }
 #pw{
     background-image: url(../images/pw-icon.png);

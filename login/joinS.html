@@ -7,6 +7,7 @@
     <title>하나부터 열까지</title>
     <link href="../images/favicon.png" rel="shortcut icon">
     <link rel="stylesheet" href="../css/join.css">
+    <script src="../javascript/joinS.js" type="text/javascript"></script>
 </head>
 <body>
     <h1 class="d-none">From One To Ten</h1>
@@ -47,29 +48,29 @@
                             <hr>
                             <div class="all-agreement">
                                 <h4>전체 동의</h4>
-                                <button class="select-all">전체 동의</button>
+                                <input type="checkbox" id="chkgroup_Master" onchange="togglecheckboxes(this,'chkgroup')"> 전체 선택
                                 <div class="checkbox-style">
                                     <label>
-                                        <input type="checkbox">
+                                        <input type="checkbox" id="cb_1" class="chkgroup">
                                         {필수} <strong>서비스 이용약관</strong>에 동의합니다.
                                         <button><a href="#">자세히보기</a></button>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input type="checkbox" id="cb_2" class="chkgroup">
                                         {필수} <strong>개인정보처리방침</strong>에 동의합니다.
                                         <button><a href="#">자세히보기</a></button>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input type="checkbox" id="cb_3" class="chkgroup">
                                         {선택} <strong>광고성 정보의 수신</strong>에 동의합니다.
                                     </label>
-                                    <div class="chekcbox-ad">
+                                    <div class="chekcbox-ad" id="cb_4" class="chkgroup">
                                         <label>
-                                            <input type="checkbox">
+                                            <input type="checkbox" id="cb_5" class="chkgroup">
                                             이메일
                                         </label>
                                         <label>
-                                            <input type="checkbox">
+                                            <input type="checkbox" id="cb_6" class="chkgroup">
                                             문자
                                         </label>
                                     </div>
@@ -117,20 +118,6 @@
                     </form>
                 </article>
             </section>
-            <div class="row_group">
-                <div class="join_row">
-                    <h3 class="join_title">
-                        <label for="id">아이디</label>
-                    </h3>
-                    <span class="ps_box int_id">
-                        <input type="text" id="id" name="id" class="int"
-                        title="ID" maxlength="20">
-                    </span>
-                    <span class="error_next_box" id="idMsg">
-                        에러발생 시 조건 넣어 조건에 맞는 문장 넣어줌
-                    </span>
-                </div>
-            </div>
     </div>
 </body>
 </html>

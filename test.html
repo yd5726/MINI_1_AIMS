@@ -105,5 +105,17 @@
         reader.readAsDataURL(event.target.files[0]);
       }
     </script>
+
+    <!--test 4-->
+    <input type="text" onkeyup="characterCheck(this)" onkeydown="characterCheck(this)" />
+    <script>
+        function characterCheck(obj){
+        var regExp = /[ \{\}\[\]\/?.,;:|\)*~`!^\-_+┼<>@\#$%&\'\"\\\(\=]/; 
+        if( regExp.test(obj.value) ){
+            alert("특수문자는 입력하실수 없습니다.");
+            obj.value = obj.value.substring(0, obj.value.length - 1);
+        }
+    }
+    </script>
 </body>
 </html>

@@ -1,0 +1,227 @@
+@charset "UTF-8";
+:root{
+    --main-color : #000;
+    --sub-color: #D9D9D9;
+    --sub2-color: #FFEA7A;
+    --manager-color : #07690B;
+    --teacher-color : #9747FF;
+    --student-color : #4584FF;
+    --white-color : #FFF;
+    --lF-box2-color : blue;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: var(--main-color);
+}
+ul{
+    list-style: none;
+}
+.d-none{
+    display: none;
+}
+.container{
+    max-width: 1190px;
+    height: 115px;
+    margin: 0 auto;
+}
+.wrap{
+    max-width: 1190px;
+    height: 1010px;
+    margin: 0 auto;
+    /*background-color: var(--sub-color);*/
+}
+fieldset{
+    border: none;
+}
+hr{
+    margin: .5rem;
+}
+input[type=checkbox] {
+    zoom: 2;
+}
+input[type=text], input[type=password], input[type=email], input[type=tel]{
+    width: 12rem;
+    height: 2rem;
+    font-size: 1rem;
+}
+input[type=file] {
+    width: 9.5rem;
+    margin-left: 1rem;
+}
+input[type="date"]{
+    width: 12rem;
+    height: 2rem;
+    font-size: 1rem;
+    border:1px solid var(--main-color);
+    padding:5px;
+}
+/*=========================================
+ header : Hlogo, Htitle
+===========================================*/
+header{
+    background-color: var(--student-color);
+}
+.Hlogo{
+    display: inline-block;
+    width: 250px;
+    height: 110px;
+    margin-top: 2px;
+}
+.Hlogo img{
+    margin: 1rem 4.5rem;
+    float: left;
+}
+.Htitle{
+    width: 930px;
+    height: 40px;
+    float: right;
+    padding: 1.9rem 0;
+    text-align: center;
+    color:var(--white-color);
+}
+/*=========================================
+ nav : main-nav
+===========================================*/
+.main-nav{
+    float: left;
+    min-width: 240px;
+    margin: 1rem .3rem;
+    height: 930px;;
+    /*background-color: var(--student-color);*/
+}
+.main-nav ul{
+    margin: 1rem 1.7rem;
+}
+.main-nav li{
+    margin-bottom: 1rem;
+}
+.main-nav li img{
+    vertical-align: middle;
+}
+#ID-picture{
+  width: 10rem;
+  height: 10rem;
+  margin: 0 0.8rem;
+  margin-top: 10rem;
+  border: 1px solid black;
+  overflow: hidden;
+}
+/*================================================
+ section : loginForm-box1, loginForm-box2
+==================================================*/
+.contant{
+    float: left;
+    min-width: 900px;
+    margin: 1rem .3rem;
+    height: 46.5rem;  
+    /*background-color: var(--sub2-color);*/
+    overflow: hidden;
+}
+.loginForm{
+    height: 930px;
+    overflow: hidden;
+}
+.submit-click{
+    /*margin-top: 5rem;*/
+    height: 100px;
+}
+/*=====================loginForm-box1=====================*/
+.loginForm-box1{
+    margin: 1rem .3rem;
+}
+.loginForm-box1 h3{
+    margin-left: 1rem;
+}
+.all-agreement{
+    margin: 0 1rem;
+}
+.all-agreement h4, #chkgroup_Master{
+    float: left;
+}
+#chkgroup_Master{
+    margin-left: 15rem;
+}
+#chkgroup_Master, #cb_1, #cb_2, #cb_3, #cb_4, #cb_5, #cb_6{
+    float: left;
+    margin-right: .1rem;
+}
+.all-agreement label{
+    margin: 1rem 0;
+}
+.checkbox-style label{
+    display: block;
+}
+.checkbox-style strong{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.chekcbox-ad label{
+    display: inline-block;
+    margin-top: .5rem;
+    margin-left: 2rem;
+}
+/*=====================loginForm-box2=====================*/
+.loginForm-box2 .pInfo-title{
+    margin-left: 1rem;
+    display: inline;
+}
+.loginForm-box2 p{
+    display: inline;
+    font-size: .8rem;
+    color: var(--lF-box2-color)
+}
+.pInfo-agreement{
+    margin: 0 1rem;
+}
+.pInfo-agreement div{
+    margin: 1rem 0;
+}
+.pInfo-agreement em{
+    color: var(--lF-box2-color);
+}
+/*=====================취소/회원가입=====================*/
+.submit-click button:first-child{
+    float: left;
+    margin-left: 15rem;
+    padding: .3rem 1rem;
+}
+.submit-click input:last-child{
+    float: right;
+    margin-right: 15rem;
+    padding: .3rem 1rem;
+}
+/*=========================================
+footer
+===========================================*/
+footer{
+    background-color: var(--student-color);
+    position: relative;
+    color: var(--white-color);
+    padding: .3rem 0;
+    height: 115px;
+} 
+.guide-links li{
+    display: inline-block;
+}
+.guide-links li a{
+    color: var(--white-color);
+}
+.guide-links li:nth-child(2){
+	margin: 0 .5rem;
+}
+.guide-links{
+    float: left;
+    padding: 2rem 0;
+}
+footer p{
+    float: right;
+    padding: 2rem 0;
+}

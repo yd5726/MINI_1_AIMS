@@ -58,7 +58,7 @@ header{
 ===========================================*/
 .main-nav{
     float: left;
-    min-width: 240px;
+    width: 240px;
 	left: 0px;
 	top: 115px;
     margin: 1rem .3rem;
@@ -135,7 +135,7 @@ header{
     height: 50px;
     text-indent: 3rem;
     background-position: 1rem;
-    font-size: 1rem;
+    font-size: .8rem;
 }
 #pw{
     background-image: url(../images/pw-icon.png);

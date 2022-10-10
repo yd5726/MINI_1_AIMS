@@ -7,7 +7,7 @@
     <title>하나부터 열까지</title>
     <link href="../images/favicon.png" rel="shortcut icon">
     <link rel="stylesheet" href="../css/joinS.css">
-    <script src="../javascript/joinS.js" type="text/javascript"></script>
+    <script src="../jquery/jquery-3.6.1.js"></script>
 </head>
 <body>
     <h1 class="d-none">From One To Ten</h1>
@@ -33,7 +33,7 @@
                         <a href="joinS.html"><img src="../images/joinS-btn.png" alt="joinS-btn 학생"></a>
                     </li>
                 </ul>
-                <div id="ID-picture">증명사진(200x200)</div>
+                <div id="ID-picture"><p>증명사진(200x200)</p></div>
                 <input type="file" id="image" accept="image/*" onchange="setIDpicture(event);"/>
             </nav>
             <section class="contant">
@@ -87,6 +87,7 @@
                                 <div class="joinS-name">
                                     <label for="joinS_Name">이름</label><em>*</em>
                                     <input type="text" name="joinS-name" id="joinS_Name"
+                                    maxlength="5"
                                     onkeyup="characterCheck(this)" onkeydown="characterCheck(this)"
                                     required>
                                     <span class="d-none">조건 : 이름을 정확하게 입력해주세요.</span>
@@ -137,4 +138,5 @@
             </section>
     </div>
 </body>
+<script src="../javascript/joinS.js" type="text/javascript"></script>
 </html>

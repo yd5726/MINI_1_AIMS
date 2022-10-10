@@ -10,6 +10,12 @@
 </head>
 <body>
     <h1 class="d-none">From One To Ten</h1>
+    <div id="popup" class="d-none">
+        <div class="contentP">
+            <img src="../images/popup.JPG" alt="팝업창" />
+            <button type="button" id="close">&times;</button>
+        </div>
+    </div>
     <header>
         <h2 class="d-none">FOOT: logo, promotion</h2>
         <div class="container">
@@ -27,11 +33,11 @@
             <ul>
                 <li>
                     <img src="../images/login-icon.png" alt="login-icon">
-                    <a href="login.html">로그인</a>
+                    <a href="../login/login.html">로그인</a>
                 </li>
                 <li>
                     <img src="../images/intro-icon.png" alt="intro-icon">
-                    <a href="../intro/intro.html">소개</a>
+                    <a href="intro.html">소개</a>
                 </li>
                 <li>
                     <img src="../images/loc-icon.png" alt="loc-icon">
@@ -43,31 +49,30 @@
                 </li>
             </ul>
         </nav>
-        <section class="wrap">
+        <section class="content">
             <h2 class="d-none">FOOT: section</h2>
-            <article class="loginBG">
-                <h3 class="d-none">FOOT: login</h3>
-                <div class="login-input">
-                    <form action="#result.html" name="login" method="post">
-                        <div class="login-input-main">
-                            <h3>로그인</h3>
-                            <label for="id"></label>
-                            <input type="text" name="id" id="id"
-                                placeholder="아이디" autocomplete="off">
-                            <label for="pw"></label>
-                            <input type="password" name="pw" id="pw"
-                                placeholder="비밀번호" autocomplete="off">
-                            <input type="submit" value="로그인" class="login-bnt">
-                        </div>
-                        <div class="login-input-sub">
-                            <ul>
-                                <li><a href="#">비밀번호 찾기</a></li>
-                                <li><a href="#">아이디 찾기</a></li>
-                                <li><a href="joinS.html">회원가입</a></li>
-                            </ul>
-                        </div>
-                    </form>
-                </div>
+            <article class="article1">
+                <h2>수학의 아침</h2>
+                <h4>진정한 성장과 입시의 성공</h4>
+                <p>미래가치교육, 영재특화교육, 미래 가치교육을 실현하는 초등관</p>
+                <p>진정한 성장과 입시의 성공, 특목/자사 입시의 성공&최강내신 중등입시센터</p>
+                <p>수학/과학/경시/입시성공을 위한 중등 영재관</p>
+                <p>학과 습 완성을 만드는 대입전문가집단 고등관</p>
+            </article>
+            <article class="article2">
+                <h4>수내캠퍼스</h4>
+                <ul class="campus-list">
+                    <li>
+                        <img src="../images/campus1.JPG" alt="campus1">
+                        <p class="campus-title">수내캠퍼스</p>
+                        <p class="campus-name">수학의 아침 초등관</p>
+                    </li>
+                    <li>
+                        <img src="../images/campus2.JPG" alt="campus2">
+                        <p class="campus-title">수내캠퍼스</p>
+                        <p class="campus-name">수학의 아침 중등입시센터</p>
+                    </li>
+                </ul>
             </article>
         </section>
     </div>

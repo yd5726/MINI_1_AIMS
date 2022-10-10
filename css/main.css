@@ -30,11 +30,45 @@ ul{
     max-width: 1190px;
     height: 115px;
     margin: 0 auto;
+    position: relative;
 }
 .wrap{
     max-width: 1190px;
     height: 590px;
-    margin: 0 auto; 
+    margin: 0 auto;
+}
+.content {
+    float: left;
+    width: 935px;
+    height: 590px;
+    position: relative;
+}
+/*----------------------popup-------------------------------*/
+#popup{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9999;
+}
+.contentP{
+	position: absolute;
+	left: 40%;
+	top: 25%;
+    width: 630px;
+    height: 265px;
+}
+#close{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: black;
+	color: white;
+	right: 0;
+	top: 0;
+	font-size: 2rem;
+    cursor: pointer;
 }
 /*=========================================
  header : logo, promotion
@@ -62,7 +96,7 @@ header{
 	left: 0px;
 	top: 115px;
     margin: 1rem .3rem;
-    height: 549px;;
+    height: 550px;
 }
 .main-nav li{
     margin-bottom: 1rem;
@@ -145,12 +179,79 @@ header{
     text-indent: 3rem;
     background-position: 1rem;
 }
+/*---------------item---------------*/
+.item{
+	position: relative;
+	padding: 1rem 0;
+    top: 66.3%;
+}
+.item-wrap{
+    max-width: 1190px;
+    margin: 0 auto;
+    position: relative;
+}
+.prev{
+	position: absolute;
+	color: var(--text-color);
+	border: 1px solid #ccc;
+	padding: 1rem;
+    left: 0;
+    top: 35%;
+    margin-left: .5rem;
+}
+.next{
+	position: absolute;
+	color: var(--text-color);
+	border: 1px solid #ccc;
+	padding: 1rem;
+	right: 0;
+    top: 35%;
+    margin-right: .5rem;
+}
+.carousel{
+	width: 940px;
+	height: 300px;
+	overflow: hidden;
+    margin: 0 auto;
+}
+.carousel div{
+	float: left;
+}
+#posts{
+	height: 250px;
+	width: 300%;
+	transition: all ease-in-out .5s;
+    margin: 1rem;
+}
+.post {
+	width: 940px;
+	height: 250px;
+}
+.post > div{
+	float: left;
+}
+.carousel::after{
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+}
+.attach-txt{
+    margin-left: 1rem;
+}
+/*------------intro-------------------*/
+.article1{
+    margin-bottom: 5rem;
+    margin-top: .5rem;
+}
+.campus-list{
+    display: flex;
+}
 /*=========================================
 footer
 ===========================================*/
 footer{
     background-color: var(--main-color);
-    position: relative;
     color: var(--white-color);
     padding: .3rem 0;
     height: 115px;

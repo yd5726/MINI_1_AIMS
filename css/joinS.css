@@ -36,7 +36,6 @@ ul{
     max-width: 1190px;
     height: 1010px;
     margin: 0 auto;
-    /*background-color: var(--sub-color);*/
 }
 fieldset{
     border: none;

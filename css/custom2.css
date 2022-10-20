@@ -13,7 +13,7 @@
     padding: 0;
 }
 html{
-    font-size: 16px;
+    font-size: 20px;
     scroll-behavior: smooth;
 }
 a{
@@ -40,17 +40,65 @@ header{
     background-color: var(--white-color);
 }
 /*=========================================
- nav
+ section
 ===========================================*/
+/*main-nav*/
 .main-nav ul li{
     margin: 1rem;
 }
 .main-nav li img{
     vertical-align: middle;
 }
+/*login*/
 .loginBG{
     background-image: url("../images/loginBG.png");
     background-repeat: no-repeat;
+}
+.login-input h3{
+    color: var(--white-color);
+    font-size:2rem;
+    text-align: center;
+}
+.login-input input{
+    display: block;
+    margin: .5rem 0;
+}
+.login-btn{
+    width: 15rem;
+    height: 2.75rem;
+}
+.login-input-main, .login-input-main label{
+    margin: 0 7rem;
+}
+.login-input-sub{
+    text-align: center; 
+    margin-top: 1rem;
+}
+.login-input-sub li{
+    display: inline-block;
+}
+.login-input-sub li a{
+    color: var(--white-color);
+    font-size: .7rem;
+}
+.login-input-sub li a:nth-child(n){
+    margin:0 1rem;
+}
+#id{
+    background-image: url(../images/id-icon.png);
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 2.5rem;
+    text-indent: 3rem;
+    background-position: 1rem;
+}
+#pw{
+    background-image: url(../images/pw-icon.png);
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 2.5rem;
+    text-indent: 3rem;
+    background-position: 1rem;
 }
 /*=========================================
 footer
@@ -61,4 +109,4 @@ footer{
 }
 .guide-links li a{
     color: var(--white-color);
-} 
+}

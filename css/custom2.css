@@ -50,29 +50,31 @@ header{
     vertical-align: middle;
 }
 /*login*/
-.loginBG{
+.login-bg{
     background-image: url("../images/loginBG.png");
     background-repeat: no-repeat;
+    width: 100%;
 }
 .login-input h3{
     color: var(--white-color);
     font-size:2rem;
     text-align: center;
+    padding: 1rem 0;
 }
-.login-input input{
-    display: block;
-    margin: .5rem 0;
+.login-input label{
+    padding: .5rem 0;
 }
 .login-btn{
     width: 15rem;
     height: 2.75rem;
+    margin: 0 7rem;
 }
 .login-input-main, .login-input-main label{
     margin: 0 7rem;
 }
 .login-input-sub{
     text-align: center; 
-    margin-top: 1rem;
+    padding: 1rem;
 }
 .login-input-sub li{
     display: inline-block;

@@ -1,85 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>하나부터 열까지</title>
-    <link href="../images/favicon.png" rel="shortcut icon">
-    <link rel="stylesheet" href="../css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FOOT : 하나부터 열까지</title>
+    <link href="images/favicon.png" rel="shortcut icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="../css/custom-login.css">
 </head>
+
 <body>
-    <h1 class="d-none">From One To Ten</h1>
+    <h1 class="d-none">하나부터 열까지</h1>
     <header>
-        <h2 class="d-none">FOOT: logo, promotion</h2>
-        <div class="container">
-            <div class="Hlogo">
-                <a href="/"><img src="../images/logo.png" alt="logo-img"></a>
-            </div>
-            <div class="Hpromotion">
-                <img src="../images/promotion.png" alt="promotion-img">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 bg-white">
+                        <div class="Hlogo">
+                            <a href="../index.html"><img src="../images/logo.png" class="img-fluid" alt="logo-img"></a>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="Hpromotion m-2">
+                            <img src="../images/promotion.png" class="img-fluid" alt="promotion-img">
+                        </div>
+                    </div>
+                    <div class="col-12 dropdown float-right">
+                        <button class="btn btn-dark dropdown-toggle float-right" type="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="메뉴">
+                            메뉴
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="login.html">로그인</a></li>
+                            <li><a class="dropdown-item" href="../intro/intro.html">소개</a></li>
+                            <li><a class="dropdown-item" href="#">위치</a></li>
+                            <li><a class="dropdown-item" href="#">강사진 소개</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
-    <div class="wrap">
-        <nav class="main-nav">
-            <h2 class="d-none">FOOT: main-nav</h2>
-            <ul>
-                <li>
-                    <img src="../images/login-icon.png" alt="login-icon">
-                    <a href="login.html">로그인</a>
-                </li>
-                <li>
-                    <img src="../images/intro-icon.png" alt="intro-icon">
-                    <a href="../intro/intro.html">소개</a>
-                </li>
-                <li>
-                    <img src="../images/loc-icon.png" alt="loc-icon">
-                    <a href="#">위치</a>
-                </li>
-                <li>
-                    <img src="../images/tecIntro-icon.png" alt="tecIntro-icon">
-                    <a href="#">강사진 소개</a>
-                </li>
-            </ul>
-        </nav>
-        <section class="wrap">
-            <h2 class="d-none">FOOT: section</h2>
-            <article class="loginBG">
-                <h3 class="d-none">FOOT: login</h3>
-                <div class="login-input">
-                    <form action="#result.html" name="login" method="post">
-                        <div class="login-input-main">
-                            <h3>로그인</h3>
-                            <label for="id"></label>
-                            <input type="text" name="id" id="id"
-                                placeholder="아이디" autocomplete="off">
-                            <label for="pw"></label>
-                            <input type="password" name="pw" id="pw"
-                                placeholder="비밀번호" autocomplete="off">
-                            <input type="submit" value="로그인" class="login-bnt">
-                        </div>
-                        <div class="login-input-sub">
-                            <ul>
-                                <li><a href="#">비밀번호 찾기</a></li>
-                                <li><a href="#">아이디 찾기</a></li>
-                                <li><a href="joinS.html">회원가입</a></li>
-                            </ul>
-                        </div>
-                    </form>
-                </div>
-            </article>
-        </section>
-    </div>
-    <footer>
+    <section>
         <div class="container">
-            <ul class="guide-links">
-             <li><a href="#">제휴업체</a></li>
-             <li><a href="#">이용약관</a></li>
-             <li><a href="#">개인정보취급방침</a></li>
-            </ul>
-            <p>copyrignt&copy; 2022 <strong class="owner">FOOT&trade;</strong>.all rights reserved</p>
+            <div class="row">
+                <div class="col-sm-3">
+                    <nav class="main-nav d-none d-sm-block">
+                        <h2 class="d-none">FOOT: main-nav</h2>
+                        <ul>
+                            <li>
+                                <img src="../images/login-icon.png" alt="login-icon">
+                                <a href="login.html">로그인</a>
+                            </li>
+                            <li>
+                                <img src="../images/intro-icon.png" alt="intro-icon">
+                                <a href="../intro/intro.html">소개</a>
+                            </li>
+                            <li>
+                                <img src="../images/loc-icon.png" alt="loc-icon">
+                                <a href="#">위치</a>
+                            </li>
+                            <li>
+                                <img src="../images/tecIntro-icon.png" alt="tecIntro-icon">
+                                <a href="#">강사진 소개</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-sm-9 px-0 overflow-hidden">
+                    <h2 class="d-none">FOOT: section</h2>
+                    <div class="login-input login-bg1">
+                        <form action="#result.html" name="login" method="post">
+                            <div class="login-bg2">
+                                <div class="login-wrap">
+                                    <div class="login-input-main">
+                                        <h3>로그인</h3>
+                                        <label for="id">
+                                            <input type="text" name="id" id="id" placeholder="아이디" autocomplete="off">
+                                        </label>
+                                        <label for="pw">
+                                            <input type="password" name="pw" id="pw" placeholder="비밀번호"
+                                                autocomplete="off">
+                                        </label>
+                                        <input type="submit" value="로그인" class="login-btn">
+                                    </div>
+                                    <div class="login-input-sub">
+                                        <ul>
+                                            <li><a href="#">비밀번호 찾기</a></li>
+                                            <li><a href="#">아이디 찾기</a></li>
+                                            <li><a href="joinS.html">회원가입</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col">
+                        <ul class="guide-links text-left">
+                            <li><a href="#">제휴업체</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보취급방침</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p class="text-right my-4">copyrignt&copy; 2022 <strong class="owner">FOOT&trade;</strong>.all
+                            rights reserved</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
 </body>
+
 </html>

@@ -43,6 +43,73 @@ header{
 .main-nav ul li{
     margin: 1rem;
 }
+/*login*/
+.login-bg1{
+    background-image: url("../images/loginBG1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 860px;
+}
+.login-bg2{
+    background-image: url("../images/loginBG2.png");
+    background-repeat: no-repeat;
+    min-width: 658px;
+    min-height: 762px;
+    display: inline-block;
+    margin: 3rem 6.2rem;
+}
+.login-input h3{
+    color: var(--white-color);
+    font-size:2rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+.login-input label{
+    margin-bottom: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+.login-btn{
+    width: 15rem;
+    height: 2.75rem;
+    margin-bottom: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+.login-input-sub{
+    text-align: center; 
+    padding: 3rem;
+}
+.login-input-sub li{
+    display: inline-block;
+}
+.login-input-sub li a{
+    color: var(--white-color);
+    font-size: .7rem;
+}
+.login-input-sub li a:nth-child(n){
+    margin:0 1rem;
+}
+#id{
+    background-image: url(../images/id-icon.png);
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 2.5rem;
+    text-indent: 3rem;
+    background-position: 1rem;
+}
+#pw{
+    background-image: url(../images/pw-icon.png);
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 2.5rem;
+    text-indent: 3rem;
+    background-position: 1rem;
+}
+.login-wrap{
+    margin: 7rem 3rem;
+}
 /*=========================================
 footer
 ===========================================*/
@@ -70,7 +137,6 @@ footer{
         height: auto;
     }
     .dropdown button, .dropdown-menu li a{
-        /* display: block; */
         color: var(--white-color);
     }
     .dropdown-menu{
@@ -88,7 +154,6 @@ footer{
         height: 0;
     }
     .dropdown button, .dropdown-menu li a{
-        /* display: block; */
         color: var(--white-color);
     }
     .dropdown-menu{
@@ -97,15 +162,13 @@ footer{
     footer{
         font-size: .5rem;
     }
-    .main-nav{
-        width: 0;
-        height: 0;
+    .login-bg1{
+        background-image: url("../images/loginBG1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 320px;
     }
-    .slogan img{
-        width: 110%;
-        height: auto;
-    }
-    .indexBGfont{
-        font-size: 0;
+    .login-bg2{
+        display: none;
     }
 }
